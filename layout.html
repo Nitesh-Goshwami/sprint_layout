@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+    <title>
+        Website Layout-I
+    </title>
+    <style>
+        .content{
+            margin-left:300px;
+            grid-template: "a"
+            "b"
+            "c";
+        }
+        .program_items {
+            display: grid;
+            grid-template-rows: 20px;
+            grid-template-columns: 115px 115px 115px 115px;
+            float: left;
+            text-align: center;
+            clear: both;
+            margin-left: 140px;
+            color: rgb(17, 17, 94);
+            padding-top: 5px;
+
+        }
+
+        .program_items2 {
+            display: grid;
+            grid-template-columns: 250px 250px 250px;
+            float: left;
+            clear: both;
+            grid-gap: 20px;
+            color: rgb(17, 17, 94);
+            padding-top: 5px;
+            margin-top: 40px;
+
+        }
+
+
+@media only screen and (max-width: 600px) 
+{
+    .content{
+            grid-template: "a"
+            "b"
+            "c";
+        }
+} 
+
+
+@media only screen and (min-width: 600px) {
+    .content{
+            grid-template: "a"
+            "b"
+            "c";
+        }
+} 
+
+
+@media only screen and (min-width: 768px) {
+    .content{
+            grid-template: "a b"
+            "c";
+        }
+} 
+
+
+@media only screen and (min-width: 992px) {
+    .content{
+            grid-template: "a b"
+            "c";
+        }
+} 
+
+@media only screen and (min-width: 1200px) {
+    .content{
+            grid-template: "a b c";
+        }
+}
+        .scholarship1 {
+            background-color: rgb(245, 168, 27);
+        }
+
+        .scholarship2 {
+            background-color: rgb(51, 51, 173);
+        }
+
+        .scholarship3 {
+            background-color: skyblue;
+
+        }
+#first_block{
+    grid-area: a;
+}
+#second_block{
+    grid-area: b;
+}
+#third_block{
+    grid-area: c;
+}
+        .scholarship1,
+        .scholarship2,
+        .scholarship3 {
+            width: 250px;
+            height: 70px;
+            float: left;
+            margin: 10px;
+            border-radius: 5px;
+            padding-top: 10px;
+            justify-content: center;
+        }
+
+        #img {
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            float: left;
+            margin-left: 20px;
+
+        }
+
+        .lines1 {
+
+            font-size: large;
+            font-weight: bold;
+        }
+
+        .lines1,
+        .lines2 {
+            margin-left: 20px;
+            color: white;
+            float: left;
+        }
+
+        div>h1 {
+            width: 750;
+            float: left;
+            clear: both;
+            text-align: center;
+            color: darkblue;
+            margin-left: 250px;
+        }
+
+        .graduates {
+            background-color: cyan;
+            height: 20px;
+            width: 100px;
+            text-align: center;
+            color: white !important;
+        }
+
+        #course_img1,
+        #course_img2,
+        #course_img3 {
+            width: 250px;
+            height: 200px;
+            margin-left: 10px;
+            border-radius: 5px;
+        }
+
+        .course_lines {
+            padding-left: 40px;
+        }
+
+        #Branch_line {
+            color: darkblue !important;
+            font-weight: bold;
+        }
+
+        .button {
+            color: cyan;
+            border: 1px solid cyan;
+            padding-left: 40px;
+            width:100px;
+            margin-left: 40px;
+            height:20px;
+            padding-top: 5px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class = "content">
+        <div>
+        <div class="scholarship1">
+            <span><img id="img" src="https://www.designshift.in/images/DSImage1.jpeg"></span>
+            <span class="lines1">Scholarship</span><br>
+            <span class="lines2">Available</span>
+        </div>
+        <div class="scholarship2">
+            <span><img id="img" src="https://www.designshift.in/images/DSImage1.jpeg"></span>
+            <span class="lines1">Scholarship</span><br>
+            <span class="lines2">Available</span>
+        </div>
+        <div class="scholarship3">
+            <span><img id="img" src="https://www.designshift.in/images/DSImage1.jpeg"></span>
+            <span class="lines1">Scholarship</span><br>
+            <span class="lines2">Available</span>
+        </div>
+    </div>
+    <div>
+        <h1>Popular Program</h1>
+        <div class="program_items">
+            <div class="graduates">Graduates</div>
+            <div>Postgraduates</div>
+            <div>PHD Scholarship</div>
+            <div>Training</div>
+        </div>
+    </div>
+    <div class="program_items2">
+        <div><img id="course_img1" src="https://www.designshift.in/images/DSImage1.jpeg"></div>
+        <div><img id="course_img2" src="https://www.designshift.in/images/DSImage1.jpeg"></div>
+        <div><img id="course_img3" src="https://www.designshift.in/images/DSImage1.jpeg"></div>
+        <div class="course_lines">Agriculture</div>
+        <div class="course_lines">Agriculture</div>
+        <div class="course_lines">Agriculture</div>
+        <div id="Branch_line" class="course_lines">Chemical Engineering</div>
+        <div id="Branch_line" class="course_lines">Mechanical Engineer</div>
+        <div id="Branch_line" class="course_lines">Bio Engineering</div>
+        <div class="course_lines">Loren Lpsem doler sit amet concetetur adipisicing elit sed do elusmod tempor
+            wndidudent ut</div>
+        <div class="course_lines">Loren Lpsem doler sit amet concetetur adipisicing elit sed do elusmod tempor
+            wndidudent ut</div>
+        <div class="course_lines">Loren Lpsem doler sit amet concetetur adipisicing elit sed do elusmod tempor
+            wndidudent ut</div>
+        <div class="button">Apply Now</div>
+        <div class="button">Apply Now</div>
+        <div class="button">Apply Now</div>
+    </div>
+</div>
+</body>
+
+</html>
